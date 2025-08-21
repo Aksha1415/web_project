@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tummy full</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tummy Treats</h1>
+    <p class="tagline">✨ Craving something sweet? We’ve got you covered! ✨</p>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart</button>
+  </header>
+
+  <section>
+    <h2><span>🍲</span>Starters</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src='https://images.pexels.com/photos/4001867/pexels-photo-4001867.jpeg' alt="Spring Roll">
+        <h3>Spring Roll</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Spring Roll',120)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/3493579/pexels-photo-3493579.jpeg" alt="Tomato Soup">
+        <h3>Tomato Soup</h3>
+        <p>₹100</p>
+        <button onclick="addToCart('Tomato Soup',100)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg" alt="Green Salad">
+        <h3>Green Salad</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('Green Salad',80)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>🍕</span>Main Course</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg " alt="Pizza">
+        <h3>Pizza</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Pizza',250)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg  " alt="Biryani">
+        <h3>Biryani</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Biryani',200)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p>₹180</p>
+        <button onclick="addToCart('Pasta',180)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>🍰</span>Desserts</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>₹150</p>
+        <button onclick="addToCart('Chocolate Cake',150)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2955820/pexels-photo-2955820.jpeg" alt="Donut">
+        <h3>Donut</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('Donut',80)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg" alt="Cupcake">
+        <h3>Cupcake</h3>
+        <p>₹70</p>
+        <button onclick="addToCart('Cupcake',70)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>🍦</span>Ice Creams</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2586924/pexels-photo-2586924.jpeg" alt="Vanilla Ice Cream">
+        <h3>Vanilla Ice Cream</h3>
+        <p>₹90</p>
+        <button onclick="addToCart('Vanilla Ice Cream',90)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/8589559/pexels-photo-8589559.jpeg" alt="Chocolate Ice Cream">
+        <h3>Chocolate Ice Cream</h3>
+        <p>₹100</p>
+        <button onclick="addToCart('Chocolate Ice Cream',100)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2161643/pexels-photo-2161643.jpeg" alt="Strawberry Ice Cream">
+        <h3>Strawberry Ice Cream</h3>
+        <p>₹95</p>
+        <button onclick="addToCart('Strawberry Ice Cream',95)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart">
+    <button class="close-btn" onclick="closeCart()">×</button>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p class="total">Total: ₹<span id="cart-total">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
